@@ -14,7 +14,8 @@ yundama_passwd: ''             # 云打码密码
 
 
 db:
-    host: 115.28.72.158
+    host: tcbds.xicp.io
+    #host: 115.28.72.158
 #    host: 192.168.0.151
     port: 3306
     user: anjian
@@ -24,12 +25,13 @@ db:
 
 # 保存登录的cookies
 redis:
-    host: 115.28.72.158
+    host: tcbds.xicp.io
+    #host: 115.28.72.158
 #    host: 192.168.0.8
     port: 6379
     password: topcom123
     cookies: 1 # cookie存取
-    urls: 2 # 抓取过的url
+    urls: 3 # 抓取过的url
     broker: 5 # celery的broker
     backend: 6 # celery的backend
     id_name: 8 # user_id和对应的name，这个是为转发微博分析而存在的
